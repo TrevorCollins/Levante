@@ -1,0 +1,50 @@
+// @mixin for-phone-only {
+// 	@media (max-width: 599px) {
+// 		@content;
+// 	}
+// }
+// @mixin for-tablet-portrait-up {
+// 	@media (min-width: 600px) {
+// 		@content;
+// 	}
+// }
+@mixin for-tablet-landscape-up {
+	@media (min-width: 920px) {
+		@content;
+	}
+}
+// @mixin for-desktop-up {
+// 	@media (min-width: 1200px) {
+// 		@content;
+// 	}
+// }
+// @mixin for-big-desktop-up {
+// 	@media (min-width: 1800px) {
+// 		@content;
+// 	}
+// }
+
+@mixin nav-btn($color: $clr-white08, $alt-color: $clr-grey) {
+	color: $color;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+	&:hover {
+		color: $alt-color;
+	}
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: -.5em;
+		left: 0;
+		right: 0;
+		height: 0.125rem;
+		background: $alt-color;
+		transform: scale( 0, 1);
+		transition: transform ease-in-out 200ms;
+	}
+	&:hover::after {
+		transform: scale( 1,1 );
+	}
+}

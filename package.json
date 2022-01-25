@@ -1,0 +1,59 @@
+{
+  "name": "levante_2",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.4",
+    "@mui/material": "^5.0.4",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^12.20.33",
+    "@types/react": "^17.0.30",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.3.1",
+    "history": "^4.10.1",
+    "json-server": "^0.17.0",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.4.4",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "run-p start-app start-api",
+    "start-app": "cross-env REACT_APP_API_BASE_URL=http://localhost:3001/ react-scripts start",
+    "start-api": "json-server --port 3001 --watch db.json --delay 500",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/material-ui": "^0.21.10",
+    "cross-env": "^7.0.3",
+    "npm-run-all": "^4.1.5"
+  }
+}

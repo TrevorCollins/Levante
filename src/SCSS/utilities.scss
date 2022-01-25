@@ -1,0 +1,111 @@
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+.flex-col,
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1rem);
+}
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+.sr-only {
+  position: absolute; 
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px; 
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* colors */
+
+.bg-dark { background-color:  $clr-dark ;}
+.bg-grey { background-color:  $clr-grey ;}
+.bg-accent { background-color:  $clr-accent ;}
+.bg-white { background-color:  $clr-white ;}
+
+.text-dark { color:  $clr-dark ;}
+.text-grey { color:  $clr-grey ;}
+.text-accent { color:  $clr-accent ;}
+.text-white { color:  $clr-white ;}
+
+/* typography */
+
+.ff-serif { font-family: $ff-serif; } 
+.ff-sans-normal { font-family: $ff-sans-normal; } 
+
+.letter-spacing-1 { letter-spacing: 2.35px; } 
+.letter-spacing-2 { letter-spacing: 2.7px; } 
+.letter-spacing-3 { letter-spacing: 4.75px; } 
+
+.uppercase { text-transform: uppercase; }
+.text-center { text-align: center;}
+
+.fs-900 { font-size: $fs-900; }
+.fs-800 { font-size: $fs-800; }
+.fs-700 { font-size: $fs-700; }
+.fs-600 { font-size: $fs-600; }
+.fs-500 { font-size: $fs-500; }
+.fs-400 { font-size: $fs-400; }
+.fs-300 { font-size: $fs-300; }
+.fs-200 { font-size: $fs-200; }
+.fs-200 { font-size: $fs-200; }
+.fs-100 { font-size: $fs-100; }
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.1;
+}
+
+.p0 { padding: 0; }
+.p1 { padding: 1rem; }
+.p2 { padding: 2rem; }
+.p3 { padding: 3rem; }
+
+.m0 { margin: 0; }
+.m05 { margin: 0.5rem; }
+.m1 { margin: 1rem; }
+.m2 { margin: 2rem; }
+.m3 { margin: 3rem; }
+
+.m1-vert { margin-top: 1rem; margin-bottom: 1rem; }
+.m2-vert { margin-top: 2rem; margin-bottom: 2rem; }
+.m3-vert { margin-top: 3rem; margin-bottom: 3rem; }
+
+.m05-inline { margin-inline: 0.5rem; }
+.m1-inline { margin-inline: 1rem; }
+.m2-inline { margin-inline: 2rem; }
+.m3-inline { margin-inline: 3rem; }
+.m-inline { margin-inline: auto; }
+.m-center { margin: 0 auto; }

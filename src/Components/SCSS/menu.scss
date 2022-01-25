@@ -1,0 +1,9 @@
+@import '../../SCSS/variables.scss';
+
+.menu {
+    width: 60rem;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}

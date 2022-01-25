@@ -1,0 +1,50 @@
+.app-header {
+	width: 100%;
+	text-align: center;
+}
+
+
+
+.tag-line {
+	font-size: 1rem;
+	margin: 1rem;
+}
+
+// .navbar {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+// 	color: white;
+// 	background: red;
+// 	div {
+// 		width: 100%;
+// 	}
+// 	.links {
+// 		justify-content: center;
+// 	}
+// 	.user {
+// 		justify-content: flex-end;
+// 	}
+// }
+// .nav {
+// 	flex-direction: row;
+// }
+// .burger {
+// 	display: flex;
+// 	@include for-tablet-landscape-up {
+// 		display: none;
+// 	}
+// }
+// .tabs {
+// 	display: none;
+// 	@include for-tablet-landscape-up {
+// 		display: flex;
+// 	}
+// }
+
+// .user-icon {
+// }
+// .cart-icon {
+// }
+// .app-body {
+// }

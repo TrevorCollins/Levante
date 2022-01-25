@@ -1,0 +1,25 @@
+@import '../../SCSS/mixins.scss';
+@import '../../SCSS/variables.scss';
+
+
+.menu-nav {
+    justify-content: center;
+    .menu-nav__item {
+        list-style: none;
+        cursor: pointer;
+        .menu-nav__title {
+            @include nav-btn($color: $clr-white08, $alt-color: $clr-accent);
+            &.menu-nav__active::after {
+				transform: scale( 1,1 );
+			}
+        }
+        .menu-nav__active {
+            color: $clr-accent;
+        }
+    }
+    .menu-nav__item ~ .menu-nav__item {
+        margin-left: 1em;
+        padding-left: 1em;
+        border-left: 0.125rem solid $clr-white08;
+    }
+}
